@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#div1
+		{
+			overflow: hidden;
+			background-color: white;
+			padding: 20px;
+		}
+		#div1 ul
+		{
+			float:right;
+			list-style: none;
+			margin-right:600px;
+
+		}
+		#div1 ul li
+		{
+         display: inline;
+         margin:20px;
+
+		}
+		#div1 ul li a
+		{
+			text-decoration: none;
+			font-family:arial;
+			color: black;
+		}
+		#div1 ul li a.active
+		{
+			background-color: grey;
+			color: black;
+		}
+		#div1 ul li a:hover
+		{
+			color: white;
+			background-color:black;
+			border-radius: 2px;
+		}
+
+		#div1 b
+		{
+			font-family: algerian;
+			font-size: 20px;
+			margin:20px;
+			margin-top:20px;
+			height: 20px; 
+		}
+		#grid
+		{
+			width: 100%;
+			margin:0px;
+			display: grid;
+			background-color: #D0D3D4;
+			 height: 500px;
+			grid-template-rows: repeat(2,1fr);
+			grid-template-columns: repeat(2,1fr); 
+		}
+		#grid .div1 p 
+		{
+         margin-top: 200px;
+
+		}
+		#grid .div1 {
+			font-family:cursive;
+			font-size: 20px;
+         ;
+		} 
+		#grid .div1 b
+		{
+         color: green;
+         font-size: 30px;
+		}
+		#grid .div1 button a
+		{
+               text-decoration:none;
+               color: white;
+               font-size: 30px;
+                  
+		}
+		#grid .div1 button
+		{
+			font-style: cursive;
+               border-radius: 5%;
+               width: 200px;
+               height:100px;background-color: black;
+		}
+		#grid .div1 button:hover
+		{
+         width:220px;
+         height: 120px;
+         background-color: white;
+		}
+		#grid .div1 button a:hover
+		{
+			color:black;
+		}
+           #grid .<img src="pic12.jpeg"> {
+           	margin-left: 300px;margin-top:20px; 
+           }#div2 
+           {
+           	margin-left:30%;
+           }
+           #grid2 
+		{
+			width: 100%;
+			margin:0px;
+			display:grid;
+			
+			background-color: yellow;
+			 height:500px;
+			grid-template-rows: repeat(2,1fr);
+			grid-template-columns: repeat(2,1fr); 
+		}
+		#grid2 .div2 {
+           	margin-left:300px;margin-top:20px; 
+           }
+           #grid2 .div1 
+           {
+            font-family: sans-serif;
+            margin-top: 200px;
+
+           }
+           #grid2 .div1 h3
+           { 
+           	    font-family:Arial; 
+                color: green;
+                font-size:30px;
+           }
+           #grid2 .div1 button a
+           {
+           	text-decoration: none;
+           	color: black;
+           }
+           #grid2 .div1 button 
+           {
+           	font-size: 30px;
+           	width:200px;
+           	border-radius: 20px;
+           	background-color: green;
+           }
+           #grid2 .div1 b
+           {
+            color: white;
+           }
+           #grid2 .div1 button:hover
+		{
+        
+         background-color:white;
+		}
+		#grid2 .div1 button a: hover
+		{
+			color:black;
+		}
+		#div3 b
+		{
+			font-family: arial;
+			color: grey;
+			font-size: 30px;
+		}
+		#grid3
+		{
+			display: grid;
+			width: 100%;
+			margin: 0px auto;
+			
+			grid-gap: 30px;
+			box-sizing: border-box;
+			grid-template-rows: 500px;
+			grid-template-columns: repeat(3,1fr);
+		}
+		#grid3 p
+		{
+			margin-left: 30px;
+			font-family: monospace;
+
+		}
+		#grid3 #d1
+		{
+			background-image:url(pic9.jpeg);
+			background-size: cover;
+			height: 70%;
+			margin-left: 10px;
+			margin-top: 5px;
+			padding: 10px;
+			border:2px blue;
+
+		}
+		#grid3 #d1 b
+		{
+			text-align:center;
+			background-color:black;
+			color:black;
+			font-family: Arial;
+		}
+		#grid3 #d1 p
+		{
+			margin-top: 350px;
+			 
+		}#grid3 #d2
+		{
+			background-image:url(pic10.jpeg);
+			background-size: cover;
+			height: 70%;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		#grid3 #d2 b
+		{
+			text-align:center;
+			background-color:black;
+			color:white;
+			font-family: Arial;
+		}
+		#grid3 #d2 p
+		{
+			margin-top: 350px;
+			 
+		}
+		#grid3 #d3
+		{
+			background-image:url(pic11.jpg);
+			background-size: cover;
+			height: 70%;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		#grid3 #d3 p
+		{
+			margin-top: 350px;
+			 
+		}
+	
+		#div4  p
+		{
+			
+			font-family: arial;
+            
+		}
+		#div4 
+		{
+			background-color:black;
+			font-family: arial;
+             font-size:30px;
+             color:white;
+             margin-left:600px; 
+              margin-right:600px; 
+		}
+		#grid3 #d3 b
+		{
+			text-align:center;
+			background-color:black;
+			color:white;
+			font-family: Arial;
+		}
+		#grid4
+		{
+			
+			display: grid;
+			width: 100%;
+			margin: 0px auto;
+			
+			grid-gap: 30px;
+			box-sizing: border-box;
+			grid-template-rows: 350px 300px;
+			grid-template-columns: repeat(3,1fr);
+		
+		}
+		#div5 b{
+            font-family: ARIAL;
+            font-weight: 40px;
+		}
+		#grid6
+		{
+			width: 100%;
+			margin:0px;
+			display: grid;
+			background-color: #D0D3D4;
+			 height: 500px;
+			grid-template-rows: 300px 300px 10px 60px;
+			grid-template-columns: 400px 10px 400px ; 
+		}
+		#grid6 .div1 {
+			margin-top:80px;
+			grid-row:-1/1;
+			border:none;
+		} 
+		#grid6 .div1  input
+		{
+			border:none;
+			color: grey;
+			border-bottom:2px solid black;
+			height: 50px;
+			width: 300px;
+			background-color: #D0D3D4;
+		}
+		#grid6 .div2 input
+		{
+			border:none;
+			background-color:#D0D3D4;
+			width:50px;
+		}
+		#grid6 .div4 
+		{
+			border-left: 2px solid black;
+			height: 400px;
+			margin-top: 40px;
+			margin-left: 10px; 
+		}
+		#grid6 .div1 p
+		{
+			font-size: 40px;
+		}
+		#grid6 .div2
+		{
+			margin:30px;
+		}
+		#grid6 .div3 
+		{ 
+          	font-family: arial;
+			font-size: 40px;
+		}
+		#grid6 .div3 a
+		{
+			margin-left: 400px;
+		     color: black;
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+<div id="div1">
+	<img src="pic1.png" width="200px" height="50px">
+	<ul>
+		<li><a  class="active" href="#">Home</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Tools</a></li>
+		<li><a href="#">Setting</a></li>	
+	</ul>
+</div>
+	<hr>
+	<div id="grid">
+		<div class="div1">
+			<p><center>
+				Hello, <br>
+				I'm <b>James</b> <br> I'm here to teach you business and<br>  i'll teach to how to make more money.<br>
+				<br>
+            <button><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html">Register</a></button>
+			</center>
+			</p>
+		</div>
+		<div class="div2"><img src="pic4.jpeg" height="470px;"></div>
+	</div>
+	<br>
+	<div id="div2">
+		<img src="pic5.png" height="100px" width="150px">
+				<img src="pic6.png" height="100px" width="150px">
+				<img src="pic7.png" height="100px" width="150px">
+				<img src="pic8.png" height="100px" width="150px">
+	</div>
+	<br>
+	<div id="grid2">
+		<div class="div1"><p><center><h3> About Us</h3><br>
+         <b>Free Lancing Front End Developer</b><br><br><br>
+         <br><br>
+         <button><a href="#">View More</a></button></center>
+		</p></div>
+		<div class="div2"><img src="pic4.jpeg" height="470px;"></div>
+	</div>
+	<br>
+	<br>
+   <div id="div3"><p><center>
+		<b>Services
+</b>		<br>
+		Here are some services
+	</center></p></div>	
+	<div id="grid3">
+		<div id="d1"><b><center>Faster</center></b><p>Paragraph Library Items added on the entity edit <br>form can be edited from the frontend.
+Since these items exist in another parent entity, it is not possible to add or duplicate<br> items inside the library item.</p></div>
+		<div id="d2"><b><center>Surface</center></b><p>Paragraph Library Items added on the entity edit <br>form can be edited from the frontend.
+Since these items exist in another parent entity, it is not possible to add or duplicate<br> items inside the library item.</p></div>
+		<div id="d3"><b> <center> STR</center> </b><p>Paragraph Library Items added on the entity edit <br>form can be edited from the frontend.
+Since these items exist in another parent entity, it is not possible to add or duplicate<br> items inside the library item.</p></div>
+	</div>
+	<div id="div4">
+		<p><center>Portfolio</center> </p>
+	</div>
+	<div id="grid4">
+		<div class="div1"> <a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic12.jpeg" height="330px" width="500px"></a></div>
+		<div class="div2"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic13.jpeg"></a> </div>
+		<div class="div3"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic14.jpeg"></a></div>
+		<div class="div4"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic15.jpeg"></a></div>
+		<div class="div5"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic16.jpeg"></a></div>
+		<div class="div6"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html"><img src="pic17.jpeg"></a></div>
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<div id="div5">
+		<hr>
+		<center><b>If You have any  project In your mind?</b></center>
+		<hr>
+		<br>
+		<br>
+	</div>
+	<div id="grid6">
+		<div class="div1"><center><p>
+			<p>Write here..</p>
+			<br>
+			<br>
+			<br>
+			<input type="text" name="text" placeholder="Name" ><br>
+			<br>
+			<input type="text" name="text" placeholder="@gmail.com"> 
+		</p></center></div>
+		<div class="div4"></div>
+		<div class="div2">Message*<br><br><input type="text" name="text" placeholder="type your message"></div>
+		<div class="div3"><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/wp/thnk.html">Submit</a></div>
+	</div>
+</body>
+</html>
